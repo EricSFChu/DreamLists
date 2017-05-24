@@ -7,7 +7,7 @@
     </entity>
     <entity name="Item" representedClassName=".Item" syncable="YES">
         <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="item" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="toImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="toItem" inverseEntity="Image" syncable="YES"/>
@@ -16,7 +16,7 @@
     </entity>
     <entity name="ItemType" representedClassName=".ItemType" syncable="YES">
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="toItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="toItemType" inverseEntity="Item" syncable="YES"/>
+        <relationship name="toItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="toItemType" inverseEntity="Item" syncable="YES"/>
     </entity>
     <entity name="Store" representedClassName=".Store" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -24,9 +24,9 @@
         <relationship name="toItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="toStore" inverseEntity="Item" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-1019" positionY="-900" width="128" height="103"/>
-        <element name="Image" positionX="-1181" positionY="-1062" width="128" height="88"/>
-        <element name="Store" positionX="-1296" positionY="-720" width="128" height="88"/>
-        <element name="ItemType" positionX="-821" positionY="-867" width="128" height="73"/>
+        <element name="Image" positionX="-1181" positionY="-1062" width="128" height="90"/>
+        <element name="Item" positionX="-1019" positionY="-900" width="128" height="150"/>
+        <element name="ItemType" positionX="-821" positionY="-867" width="128" height="75"/>
+        <element name="Store" positionX="-1296" positionY="-720" width="128" height="90"/>
     </elements>
 </model>

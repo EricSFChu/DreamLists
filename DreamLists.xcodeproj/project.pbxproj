@@ -22,6 +22,9 @@
 		7A2B66E71ED29CE600E7838F /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B66DF1ED29CE600E7838F /* Image+CoreDataClass.swift */; };
 		7A2B66E81ED29CE600E7838F /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B66E01ED29CE600E7838F /* Image+CoreDataProperties.swift */; };
 		7A2B66EB1ED2A7EA00E7838F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B66EA1ED2A7EA00E7838F /* CustomTextField.swift */; };
+		7A2B66EE1ED2BE2200E7838F /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B66ED1ED2BE2200E7838F /* MaterialView.swift */; };
+		7A99910D1ED2CBBE008D7A20 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A99910C1ED2CBBE008D7A20 /* ItemCell.swift */; };
+		7A99910F1ED3D43C008D7A20 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A99910E1ED3D43C008D7A20 /* ItemDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		7A2B66DF1ED29CE600E7838F /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7A2B66E01ED29CE600E7838F /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7A2B66EA1ED2A7EA00E7838F /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = ../CustomTextField.swift; sourceTree = "<group>"; };
+		7A2B66ED1ED2BE2200E7838F /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		7A99910C1ED2CBBE008D7A20 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		7A99910E1ED3D43C008D7A20 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 		7A2B66B51ED298E100E7838F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A2B66ED1ED2BE2200E7838F /* MaterialView.swift */,
+				7A99910C1ED2CBBE008D7A20 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -111,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				7A2B66A11ED295F000E7838F /* MainVC.swift */,
+				7A99910E1ED3D43C008D7A20 /* ItemDetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -166,7 +175,7 @@
 				TargetAttributes = {
 					7A2B669B1ED295F000E7838F = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 77S94498YM;
+						DevelopmentTeam = A8NM8AY685;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -210,10 +219,13 @@
 				7A2B66E41ED29CE600E7838F /* Item+CoreDataProperties.swift in Sources */,
 				7A2B66E31ED29CE600E7838F /* Item+CoreDataClass.swift in Sources */,
 				7A2B66E61ED29CE600E7838F /* ItemType+CoreDataProperties.swift in Sources */,
+				7A2B66EE1ED2BE2200E7838F /* MaterialView.swift in Sources */,
+				7A99910D1ED2CBBE008D7A20 /* ItemCell.swift in Sources */,
 				7A2B66E21ED29CE600E7838F /* Store+CoreDataProperties.swift in Sources */,
 				7A2B66A21ED295F000E7838F /* MainVC.swift in Sources */,
 				7A2B66E51ED29CE600E7838F /* ItemType+CoreDataClass.swift in Sources */,
 				7A2B66E11ED29CE600E7838F /* Store+CoreDataClass.swift in Sources */,
+				7A99910F1ED3D43C008D7A20 /* ItemDetailsVC.swift in Sources */,
 				7A2B66A81ED295F000E7838F /* DreamLists.xcdatamodeld in Sources */,
 				7A2B66EB1ED2A7EA00E7838F /* CustomTextField.swift in Sources */,
 				7A2B66A01ED295F000E7838F /* AppDelegate.swift in Sources */,
@@ -341,7 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 77S94498YM;
+				DEVELOPMENT_TEAM = A8NM8AY685;
 				INFOPLIST_FILE = DreamLists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ECDev.DreamLists;
@@ -354,7 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 77S94498YM;
+				DEVELOPMENT_TEAM = A8NM8AY685;
 				INFOPLIST_FILE = DreamLists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ECDev.DreamLists;
@@ -382,6 +394,7 @@
 				7A2B66B31ED295F000E7838F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
